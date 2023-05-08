@@ -33,18 +33,26 @@ public class Main {
 //		kiwi.eat();
 //		kiwi.fly();
 		
-		// Da ke thua (java ko support) => dung interface
-		Dog d = new Dog();
-		d.eat();
-		d.makeSound();
+//		// Da ke thua (java ko support) => dung interface
+//		Dog d = new Dog();
+//		d.eat();
+//		d.makeSound();
+//		
+//		Bird b = new Bird();
+//		b.eat();
+//		b.makeSound();
+//		
+//		Cat c  = new Cat();
+//		c.eat();
+//		c.makeSound();
 		
-		Bird b = new Bird();
-		b.eat();
-		b.makeSound();
-		
-		Cat c  = new Cat();
-		c.eat();
-		c.makeSound();
-		
+		// Overloading
+		MyMath myMath = new MyMath();
+		System.out.println(myMath.min(12, -3));
+		System.out.println(myMath.min(1.2321, 11));
+		System.out.println(myMath.sum(1.5,2.6));
+//		double numberArr[]  = {1,1.5,12};
+		double numberArr[] = new double []{1,1.5,12};
+		System.out.println(myMath.sum(numberArr));
 	}
 }
