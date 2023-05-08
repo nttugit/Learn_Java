@@ -18,4 +18,12 @@ public class Animal {
 	public void eat() {
 		System.out.println("chomp chomp");
 	}
+	
+	public void makeSound() {
+		System.out.println("............");
+	}
+	
+	public void sleep() {
+		System.out.println("zzzzzzzzzzzz");
+	}
 }

@@ -21,16 +21,30 @@ public class Main {
 //		risky.smoke();
 		
 		// Hierarchical inheritance: Dog -> Animal, Cat -> Animal, Bird -> Animal
-		Dog bobby = new Dog();
-		bobby.eat();
-		bobby.bark();
+//		Dog bobby = new Dog();
+//		bobby.eat();
+//		bobby.bark();
+//		
+//		Cat lucy = new Cat();
+//		lucy.eat();
+//		lucy.meow();
+//		
+//		Bird kiwi = new Bird();
+//		kiwi.eat();
+//		kiwi.fly();
 		
-		Cat lucy = new Cat();
-		lucy.eat();
-		lucy.meow();
+		// Da ke thua (java ko support) => dung interface
+		Dog d = new Dog();
+		d.eat();
+		d.makeSound();
 		
-		Bird kiwi = new Bird();
-		kiwi.eat();
-		kiwi.fly();
+		Bird b = new Bird();
+		b.eat();
+		b.makeSound();
+		
+		Cat c  = new Cat();
+		c.eat();
+		c.makeSound();
+		
 	}
 }

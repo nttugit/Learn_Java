@@ -4,9 +4,14 @@ public class Bird extends Animal{
 	public Bird() {
 		super("Bird");
 	}
-	
-	public void fly() {
-		System.out.println("I'm flying");
+
+	@Override
+	public void eat() {
+		System.out.println("I love worms");
 	}
 
+	@Override
+	public void makeSound() {
+		System.out.println("chip chip");
+	}
 }
