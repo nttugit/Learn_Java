@@ -46,13 +46,59 @@ public class Main {
 //		c.eat();
 //		c.makeSound();
 		
-		// Overloading
-		MyMath myMath = new MyMath();
-		System.out.println(myMath.min(12, -3));
-		System.out.println(myMath.min(1.2321, 11));
-		System.out.println(myMath.sum(1.5,2.6));
-//		double numberArr[]  = {1,1.5,12};
-		double numberArr[] = new double []{1,1.5,12};
-		System.out.println(myMath.sum(numberArr));
+//		// Overloading
+//		MyMath myMath = new MyMath();
+//		System.out.println(myMath.min(12, -3));
+//		System.out.println(myMath.min(1.2321, 11));
+//		System.out.println(myMath.sum(1.5,2.6));
+////		double numberArr[]  = {1,1.5,12};
+//		double numberArr[] = new double []{1,1.5,12};
+//		System.out.println(myMath.sum(numberArr));
+		
+		
+		// Abstract class
+		Point recPoint = new Point(5,5);
+		Point circlePoint = new Point(15,9);
+		
+		// abstract class ko the tao instance
+//		Shape s = new Shape(recPoint);
+		
+		Circle circle = new Circle(circlePoint,8);
+		Rectangle rectangle=  new Rectangle(recPoint, 3,4);
+		System.out.println(circle.calculateArea());
+		System.out.println(rectangle.calculateArea());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
