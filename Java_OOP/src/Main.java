@@ -56,35 +56,50 @@ public class Main {
 //		System.out.println(myMath.sum(numberArr));
 		
 		
-		// Abstract class
-		Point recPoint = new Point(5,5);
-		Point circlePoint = new Point(15,9);
+//		// Abstract class
+//		Point recPoint = new Point(5,5);
+//		Point circlePoint = new Point(15,9);
+//		
+//		// abstract class ko the tao instance
+////		Shape s = new Shape(recPoint);
+//		
+//		Circle circle = new Circle(circlePoint,8);
+//		Rectangle rectangle=  new Rectangle(recPoint, 3,4);
+//		System.out.println(circle.calculateArea());
+//		System.out.println(rectangle.calculateArea());
+//		
 		
-		// abstract class ko the tao instance
-//		Shape s = new Shape(recPoint);
+//		Inheritance and abstract
+		VehicleProducer bicycleProducer = new VehicleProducer("Martin", "Germany");
+		VehicleProducer carProducer = new VehicleProducer("Toyota", "Japan");
+		VehicleProducer airplaneProducer = new VehicleProducer("Boeing", "NATO");
+
+		Vehicle myBicycle = new Bicycle(bicycleProducer);
+		Vehicle myCar = new Car(carProducer,"gas");
+		AirPlane myPlane = new AirPlane(airplaneProducer,"petrol");
 		
-		Circle circle = new Circle(circlePoint,8);
-		Rectangle rectangle=  new Rectangle(recPoint, 3,4);
-		System.out.println(circle.calculateArea());
-		System.out.println(rectangle.calculateArea());
+		System.out.println("Bicycle: ");
+		myBicycle.start();
+		myBicycle.accelerate();
+		myBicycle.stop();
+		System.out.println("Speed: " + myBicycle.getSpeed());
+		System.out.println("Producer: " + myBicycle.getProducerName());
 		
+		System.out.println("\nCar: ");
+		myCar.start();
+		myCar.accelerate();
+		myCar.stop();
+		System.out.println("Speed: " + myCar.getSpeed());
+		System.out.println("Producer: " + myCar.getProducerName());
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("\nAirplane: ");
+		myPlane.start();
+		myPlane.accelerate();
+		myPlane.stop();
+		myPlane.takeOff();
+		myPlane.landing();
+		System.out.println("Speed: " + myPlane.getSpeed());
+		System.out.println("Producer: " + myPlane.getProducerName());
 		
 		
 		
