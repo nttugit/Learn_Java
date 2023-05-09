@@ -101,7 +101,7 @@ public class Main {
 //		System.out.println("\nAirplane: ");
 //		myPlane.start();
 //		myPlane.accelerate();
-//		myPlane.stop();
+//		myPlane.stop(); 
 //		myPlane.takeOff();
 //		myPlane.landing();
 //		System.out.println("Speed: " + myPlane.getSpeed());
