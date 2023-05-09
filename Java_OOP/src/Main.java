@@ -1,5 +1,12 @@
 
 public class Main {
+	public static void printDoubleArray(double[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+	}
+
 	public static void main(String[] args) {
 ////		Single inheritance Student -> Person
 //		Person person1 = new Person("Tuan Tu", 2000);
@@ -8,18 +15,18 @@ public class Main {
 //		person1.eat();
 //		student1.sleep();
 //		student1.doHomeWork();
-		
+
 //		// Single inheritance: Dog -> Animal
 //		Dog lulu = new Dog();
 //		lulu.eat();
 //		lulu.bark();
-		
+
 //		// Multilevel inheritance: HuskyDog -> Dog -> Animal
 //		HuskyDog risky = new HuskyDog();
 //		risky.eat();
 //		risky.bark();
 //		risky.smoke();
-		
+
 		// Hierarchical inheritance: Dog -> Animal, Cat -> Animal, Bird -> Animal
 //		Dog bobby = new Dog();
 //		bobby.eat();
@@ -32,7 +39,7 @@ public class Main {
 //		Bird kiwi = new Bird();
 //		kiwi.eat();
 //		kiwi.fly();
-		
+
 //		// Da ke thua (java ko support) => dung interface
 //		Dog d = new Dog();
 //		d.eat();
@@ -45,7 +52,7 @@ public class Main {
 //		Cat c  = new Cat();
 //		c.eat();
 //		c.makeSound();
-		
+
 //		// Overloading
 //		MyMath myMath = new MyMath();
 //		System.out.println(myMath.min(12, -3));
@@ -54,8 +61,7 @@ public class Main {
 ////		double numberArr[]  = {1,1.5,12};
 //		double numberArr[] = new double []{1,1.5,12};
 //		System.out.println(myMath.sum(numberArr));
-		
-		
+
 //		// Abstract class
 //		Point recPoint = new Point(5,5);
 //		Point circlePoint = new Point(15,9);
@@ -68,52 +74,68 @@ public class Main {
 //		System.out.println(circle.calculateArea());
 //		System.out.println(rectangle.calculateArea());
 //		
-		
-//		Inheritance and abstract
-		VehicleProducer bicycleProducer = new VehicleProducer("Martin", "Germany");
-		VehicleProducer carProducer = new VehicleProducer("Toyota", "Japan");
-		VehicleProducer airplaneProducer = new VehicleProducer("Boeing", "NATO");
 
-		Vehicle myBicycle = new Bicycle(bicycleProducer);
-		Vehicle myCar = new Car(carProducer,"gas");
-		AirPlane myPlane = new AirPlane(airplaneProducer,"petrol");
+////		Inheritance and abstract
+//		VehicleProducer bicycleProducer = new VehicleProducer("Martin", "Germany");
+//		VehicleProducer carProducer = new VehicleProducer("Toyota", "Japan");
+//		VehicleProducer airplaneProducer = new VehicleProducer("Boeing", "NATO");
+//
+//		Vehicle myBicycle = new Bicycle(bicycleProducer);
+//		Vehicle myCar = new Car(carProducer,"gas");
+//		AirPlane myPlane = new AirPlane(airplaneProducer,"petrol");
+//		
+//		System.out.println("Bicycle: ");
+//		myBicycle.start();
+//		myBicycle.accelerate();
+//		myBicycle.stop();
+//		System.out.println("Speed: " + myBicycle.getSpeed());
+//		System.out.println("Producer: " + myBicycle.getProducerName());
+//		
+//		System.out.println("\nCar: ");
+//		myCar.start();
+//		myCar.accelerate();
+//		myCar.stop();
+//		System.out.println("Speed: " + myCar.getSpeed());
+//		System.out.println("Producer: " + myCar.getProducerName());
+//		
+//		System.out.println("\nAirplane: ");
+//		myPlane.start();
+//		myPlane.accelerate();
+//		myPlane.stop();
+//		myPlane.takeOff();
+//		myPlane.landing();
+//		System.out.println("Speed: " + myPlane.getSpeed());
+//		System.out.println("Producer: " + myPlane.getProducerName());
+//		
+
+		// Interface
+//		Vinalcal500 vinalcal500 = new Vinalcal500();
+//		System.out.println(vinalcal500.sum(0, 24));
+//		
+//		CasioFx570  casioFx570 = new CasioFx570();
+//		System.out.println(casioFx570.sum(14,3));
+//		
+		double myArr[] = new double[] { 64, 25, 12, 22, 11 };
+		printDoubleArray(myArr);
+
+		SelectionSort selectionSort = new SelectionSort();
 		
-		System.out.println("Bicycle: ");
-		myBicycle.start();
-		myBicycle.accelerate();
-		myBicycle.stop();
-		System.out.println("Speed: " + myBicycle.getSpeed());
-		System.out.println("Producer: " + myBicycle.getProducerName());
+		selectionSort.sortIncreasely(myArr);
+		printDoubleArray(myArr);
 		
-		System.out.println("\nCar: ");
-		myCar.start();
-		myCar.accelerate();
-		myCar.stop();
-		System.out.println("Speed: " + myCar.getSpeed());
-		System.out.println("Producer: " + myCar.getProducerName());
-		
-		System.out.println("\nAirplane: ");
-		myPlane.start();
-		myPlane.accelerate();
-		myPlane.stop();
-		myPlane.takeOff();
-		myPlane.landing();
-		System.out.println("Speed: " + myPlane.getSpeed());
-		System.out.println("Producer: " + myPlane.getProducerName());
+		selectionSort.sortDecreasely(myArr);
+		printDoubleArray(myArr);
 		
 		
+		InsertionSort insertionSort = new InsertionSort();
+		printDoubleArray(myArr);
 		
+		insertionSort.sortIncreasely(myArr);
+		printDoubleArray(myArr);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		insertionSort.sortDecreasely(myArr);
+		printDoubleArray(myArr);
 		
 	}
+
 }
