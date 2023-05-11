@@ -108,33 +108,33 @@ public class Main {
 //		System.out.println("Producer: " + myPlane.getProducerName());
 //		
 
-		// Interface
-//		Vinalcal500 vinalcal500 = new Vinalcal500();
-//		System.out.println(vinalcal500.sum(0, 24));
+//		 Interface
+		Vinalcal500 vinalcal500 = new Vinalcal500();
+		System.out.println(vinalcal500.sum(0, 24));
+		
+		CasioFx570  casioFx570 = new CasioFx570();
+		System.out.println(casioFx570.sum(14,3));
 //		
-//		CasioFx570  casioFx570 = new CasioFx570();
-//		System.out.println(casioFx570.sum(14,3));
+//		double myArr[] = new double[] { 64, 25, 12, 22, 11 };
+//		printDoubleArray(myArr);
+//
+//		SelectionSort selectionSort = new SelectionSort();
 //		
-		double myArr[] = new double[] { 64, 25, 12, 22, 11 };
-		printDoubleArray(myArr);
-
-		SelectionSort selectionSort = new SelectionSort();
-		
-		selectionSort.sortIncreasely(myArr);
-		printDoubleArray(myArr);
-		
-		selectionSort.sortDecreasely(myArr);
-		printDoubleArray(myArr);
-		
-		
-		InsertionSort insertionSort = new InsertionSort();
-		printDoubleArray(myArr);
-		
-		insertionSort.sortIncreasely(myArr);
-		printDoubleArray(myArr);
-		
-		insertionSort.sortDecreasely(myArr);
-		printDoubleArray(myArr);
+//		selectionSort.sortIncreasely(myArr);
+//		printDoubleArray(myArr);
+//		
+//		selectionSort.sortDecreasely(myArr);
+//		printDoubleArray(myArr);
+//		
+//		
+//		InsertionSort insertionSort = new InsertionSort();
+//		printDoubleArray(myArr);
+//		
+//		insertionSort.sortIncreasely(myArr);
+//		printDoubleArray(myArr);
+//		
+//		insertionSort.sortDecreasely(myArr);
+//		printDoubleArray(myArr);
 		
 	}
 
