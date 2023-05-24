@@ -10,7 +10,7 @@ public class EnglishVietnameseDictionanry_TreeMap {
 	// Nếu key không phải String mà kiểu dữ liệu khác thì cần định nghĩa Comparator
 	private Map<String, String> data = new TreeMap<String, String>();
 
-	public String addAWord(String englishWord, String vietnameseWord) {
+	public String addAWord(String englishWord, Strin g vietnameseWord) {
 		return this.data.put(englishWord, vietnameseWord);
 	}
 
