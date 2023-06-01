@@ -1,0 +1,3 @@
+Hello World
+my age: 23
+Student [id=100, name=Nguyen Van A]
